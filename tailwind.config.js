@@ -14,7 +14,7 @@ module.exports = {
         'miami': "url('/img/miami.jpg,')",
         'new_york': "url('/img/new_york.jpg')",
         'norway': "url('/img/norway.jpg')",
-        'sanFranciscoDesktop': "url('./img/sanFranciscoDesktop.jpg')",
+        'sanFranciscoDesktop': "url('/img/sanFranciscoDesktop.jpg')",
         'seattle': "url('/img/seattle.jpg')",
         'switzerland': "url('/img/switzerland.jpg')",
         'sydney': "url('/img/sydney.jpg')",

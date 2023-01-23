@@ -15,20 +15,25 @@
 <section class="wd-full">
     <div id="home">
         <div class="w-full h-3/4">
-            <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+            <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-20 lg:justify-start">
                 <label>
                     <input class="w-48 outline-none p-3 rounded-full shadow-sm transition duration-300
-                                  focus-within:shadow-sm focus-ring-2 focus:w-11/12"
+                                  focus-within:shadow-sm focus-ring-2 focus:w-11/12 lg:hidden"
                            placeholder="San Francisco" type="search">
                 </label>
+                <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                    <p class="text-4xl ml-16 font-bold text-black pb-6">
+                        Find more locations like this!
+                    </p>
+                </div>
                 <button class="w-48 rounded-full text-xl text-primary font-semibold p-4 bg-white shadow-sm
                                 transition-all duration-500 ease-in-out hover:bg-primary
                                 hover:text-white transform hover:-translate-y-1 hover:scale-110">
                     Explore
                 </button>
             </div>
-            <div class="w-full h-full">
-                <img src="./img/sanFrancisco.jpg" alt="">
+            <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
             </div>
         </div>
     </div>
@@ -74,9 +79,22 @@
                 <p class="CardTitle">Chicago</p>
                 <p class="text-sm pl-8 text-black mr-24">2 rooms, bathroom and kitchen</p>
             </div>
-            <div class="w-full h-96 bg-LA gb-cover rounded-lg">
-                <p class="CardTitle">Los Angeles</p>
-                <p class="text-sm pl-8 text-black mr-24">4 rooms, 3 bathroom, kitchen and private pool</p>
+            <div class="lg:flex lg:h-1/3 ">
+                <div class="w-full h-96 bg-LA gb-cover rounded-lg">
+                    <p class="CardTitle">Los Angeles</p>
+                    <p class="text-sm pl-8 text-black mr-24">4 rooms, 3 bathroom, kitchen and private pool</p>
+                </div>
+                <div>
+                    <div class="w-full h-96 bg-miami gb-cover rounded-lg">
+                        <p class="CardTitle">Miami</p>
+                        <p class="text-sm pl-8 text-black mr-24">2 rooms, bathroom and kitchen</p>
+                    </div>
+                    <div class="w-full h-96 bg-bali gb-cover rounded-lg">
+                        <p class="CardTitle">Bali</p>
+                        <p class="text-sm pl-8 text-black mr-24">2 rooms, bathroom and kitchen</p>
+                    </div> 
+                </div>
+                
             </div>
         </div>
     </div>
